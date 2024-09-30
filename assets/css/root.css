@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+* {
+    font-family: "Inter", sans-serif;
+}
+
+.font-sm {
+    font-size: var(--font-sm);
+}
+
+.font-md {
+    font-size: var(--font-md);
+}
+
+.font-lg {
+    font-size: var(--font-lg);
+}
+
+.font-xl {
+    font-size: var(--font-xl);
+}
+
+.font-2xl {
+    font-size: var(--font-2xl);
+}
+
+.font-3xl {
+    font-size: var(--font-3xl);
+}
+
+.font-4xl {
+    font-size: var(--font-4xl);
+}
+
+.font-5xl {
+    font-size: var(--font-5xl);
+}
+
+.font-6xl {
+    font-size: var(--font-6xl);
+}
+
+:root {
+    --plus-jakarta: "Plus Jakarta Sans", sans-serif;
+    --font-sm: 14px;
+    --font-md: 16px;
+    --font-lg: 18px;
+    --font-xl: 20px;
+    --font-2xl: 24px;
+    --font-3xl: 30px;
+    --font-4xl: 32px;
+    --font-5xl: 40px;
+    --font-6xl: 52px;
+}
+
+@media (max-width:1200px) {
+    :root {
+        --font-3xl: 28px;
+        --font-4xl: 30px;
+        --font-5xl: 38px;
+        --font-6xl: 50px;
+    }
+}
+
+@media (max-width:1024px) {
+    :root {
+        --font-4xl: 28px;
+        --font-5xl: 36px;
+        --font-6xl: 48px;
+    }
+}
+
+@media (max-width:992px) {
+    :root {
+        --font-sm: 12px;
+        --font-md: 14px;
+        --font-lg: 16px;
+        --font-xl: 18px;
+        --font-2xl: 20px;
+        --font-3xl: 26px;
+        --font-4xl: 28px;
+        --font-5xl: 40px;
+        --font-6xl: 44px;
+    }
+}
+
+@media (max-width:768px) {
+    :root {
+        --font-lg: 14px;
+        --font-md: 12px;
+        --font-xl: 16px;
+        --font-2xl: 18px;
+        --font-3xl: 24px;
+        --font-4xl: 26px;
+        --font-5xl: 36px;
+        --font-6xl: 40px;
+    }
+}
+
+@media (max-width:576px) {
+    :root {
+        --font-4xl: 24px;
+        --font-5xl: 30px;
+        --font-6xl: 30px;
+    }
+}

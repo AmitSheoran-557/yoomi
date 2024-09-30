@@ -1,0 +1,99 @@
+.font-jakarta {
+    font-family: var(--plus-jakarta);
+}
+
+.text-light-black {
+    color: #4D4D4D;
+}
+
+.dark-Cyan {
+    color: #076787;
+}
+
+.dark-black {
+    color: #000000;
+}
+
+footer li:hover {
+    color: rgb(216, 212, 212);
+}
+
+.library-shadow {
+    box-shadow: 0px 26px 27px 0px #0000000A;
+}
+
+.primary-shadow {
+    box-shadow: 0px 3.6px 20.69px 0px #0000001A;
+}
+
+.prevarrow:hover {
+    background: #076787;
+
+    svg path {
+        fill: white !important;
+    }
+}
+
+.healthcare-box {
+    box-shadow: 0px 13px 18px 0px #0000000F;
+}
+
+.nextarrow:hover svg path {
+    fill: black;
+}
+
+/* ======================== slider - 1 =================================== */
+
+.sec-3 .slick-slide {
+    margin-left: 35px;
+    max-width: 490px;
+}
+
+.sec-3 .slick-track {
+    padding-left: 70px;
+}
+
+/* ======================== slider - 2 ================================= */
+.slider-bottom .slick-track {
+    gap: 40px !important;
+    display: flex !important;
+    min-height: 144px !important;
+    align-items: center !important;
+}
+
+.slider-bottom .slick-track .slick-current {
+    scale: 1.5;
+    border-radius: 4px !important;
+}
+
+.slider-box .slick-track {
+    display: flex !important;
+    gap: 35px !important;
+}
+
+.slider-box .slick-track .slick-slide {
+    max-width: 460px !important;
+}
+
+@media (max-width:991.99px) {
+    .sec-3 .slick-track {
+        padding-left: 13px;
+    }
+
+    .sec-3 .slick-slide {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+}
+
+@media (max-width:767.99px) {
+    .sec-3 .slick-track {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width:1440.99px) {
+    .sec-3 .slick-track {
+        padding-left: 94px;
+    }
+}

@@ -1,0 +1,661 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="EEFI" />
+    <meta name="description" content="BUILDING ELASTIC PROTOCOL" />
+    <title>Yoomi</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="EEFI" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="/meta-icon.png" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="EEFI" />
+    <meta property="twitter:description" content="" />
+    <meta property="twitter:image" content="/meta-img" />
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./page-logo.svg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    dropShadow: {
+                        '3xl': 'box-shadow: 0px 4px 15px 0px #07678726'
+                    },
+                },
+                container: {
+                    center: true,
+                    screens: {
+                        sm: "640px",
+                        md: "768px",
+                        lg: "1024px",
+                        xl: "1140px",
+                        "2xl": "1140px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body>
+    <main >
+        <!-- ------------- hero section---------------------------- -->
+        <section class="flex max-w-[1920px] mx-auto flex-col justify-center items-center min-h-scree relative">
+            <img class="absolute pointer-events-none left-0 xl:top-[150px] lg:top-32 md:top-24 top-20 lg:max-w-64 md:max-w-52 sm:max-w-44 max-w-20"
+                src="./assets/img/webp/sec-1-bg-img-2.png" alt="square-bg-img">
+            <img class="absolute pointer-events-none right-0 xl:top-56 md:top-64 sm:top-72 top-96 lg:max-w-64 md:max-w-52 sm:max-w-44 max-w-24"
+                src="./assets/img/webp/sec-1-bg-img-1.png" alt="square-bg-img">
+            <img class="absolute pointer-events-none left-9 lg:max-w-[129px] md:max-w-28 max-w-20 lg:-bottom-14 md:-bottom-12 -bottom-10"
+                src="./assets/img/webp/sec-1-flower-img.png" alt="flower-img">
+            <img class="absolute pointer-events-none lg:right-64 md:right-52 sm:right-44 right-20 lg:max-w-16 md:max-w-14 max-w-12 lg:-bottom-12  md:-bottom-12 -bottom-10"
+                src="./assets/img/webp/sec-1-flower-img-2.png" alt="flower-img">
+
+            <img class="absolute pointer-events-none -bottom-6 z-[-2] w-full" src="./assets/img/webp/sec-1-line-img.png"
+                alt="blue-line-img">
+
+            <div class="container z-1 mx-auto px-3 xl:pt-7 lg:pt-6 pt-5 w-full">
+                <nav class="flex justify-between items-center">
+                    <div><a href="/"><img src="./assets/img/svg/page-logo.svg" alt="logo-img"></a></div>
+                    <div
+                        class="flex flex-col menulist gap-11 items-center menulist justify-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue-500 z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
+                        <a class="text-black font-lg font-medium hover:scale-[1.2] duration-200 ease-linear"
+                            href="#About">About Us</a>
+                        <a class="text-black font-lg font-medium hover:scale-[1.2] duration-200 ease-linear"
+                            href="#News">News</a>
+                        <a class="text-black font-lg font-medium hover:scale-[1.2] duration-200 ease-linear"
+                            href="#Contact">Contact Us</a>
+                        <button
+                            class="font-md w-[122px] h-[45px] bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white font-semibold rounded">Get
+                            Started</button>
+                    </div>
+                    <div class="flex flex-col lg:hidden menubar justify-between z-50 relative w-8 h-6 mt-2">
+                        <span
+                            class="w-full h-1 flex rounded-md transition-all duration-500 bg-black menubarFirst origin-left"></span>
+                        <span
+                            class="w-full h-1 flex rounded-md transition-all duration-500 bg-black menubarSecond origin-left"></span>
+                        <span
+                            class="w-full h-1 flex rounded-md transition-all duration-500 bg-black menubarThird origin-left"></span>
+                    </div>
+                </nav>
+            </div>
+            <div class="container z-10 mx-auto  px-3 mt-[127px] flex flex-col items-center w-full ">
+                <h1 class="max-w-[920px] font-jakarta font-normal leading-[110%] font-6xl text-center mb-5 "><span
+                        class="font-extrabold font-jakarta font-6xl leading-[110%]">Next Generation</span> Patient
+                    Engagement and RTM Solution✨</h1>
+                <p class="font-normal max-w-[550px] mb-14 font-2xl leading-[110%] text-center text-light-black">Industry
+                    Leading AI
+                    Motion-Tracking Technology</p>
+                <div
+                    class="email-bg flex items-center rounded ps-3 mb-32 max-w-[428px] w-full bg-white pe-1 drop-shadow-2xl">
+                    <input type="email" text="" name="" placeholder="Enter Your Email"
+                        class="font-medium border-none  outline-none max-w-[428px] w-full h-[56px] placeholder:text-[#4D4D4D] text-[#076787] pr -2  ">
+                    <button
+                        class="font-md max-w-[122px] w-full text-white h-[45px] bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white  font-semibold rounded">Get
+                        Started</button>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- workout section------------------------- -->
+        <section class="flex flex-col justify-center lg:pt-14 md:pt-16 pt-20 max-h-max items-center relative">
+            <img class="absolute pointer-events-none top-0  z-[-2] w-full" src="./assets/img/webp/blue-layer-img.png"
+                alt="blue-layer-img">
+            <div class="contianer mx-auto">
+                <div class="relative">
+                    <img src="./assets/img/webp/sec-2-img.png" alt="id-img">
+                    <img class="absolute z-[-1] left-[25%] w-[50%] lg:top-4 md:top-3 sm:top-2 top-1"
+                        src="./assets/img/webp/sec-2-layers.png" alt="layers-img">
+                </div>
+            </div>
+        </section>
+        <!-- ------------- amazing features section---------------- -->
+        <section class="mb-5 sec-3 flex flex-col justify-center lg:pt-14 pt-12  items-center relative">
+            <img class="absolute pointer-events-none left-0 z-[-1] lg:max-w-72 md:max-w-56 sm:max-w-44 max-w-32 lg:-bottom-[20%] md:-bottom-[14%] sm:-bottom-[10%] -bottom-[10%]"
+                src="./assets/img/webp/cutting-square-bg-img.png" alt="">
+
+            <div class="container mx-auto px-3 z-50">
+                <div class="library-shadow lg:ps-7 rounded-[32px]">
+                    <div class="items-center lg:mb-[163px] md:mb-16 mb-8 flex flex-col">
+                        <h3 class="mb-1 font-medium font-md dark-Cyan">FEATURES</h3>
+                        <h1 class="max-w-[920px] font-jakarta font-normal leading-[110%] font-5xl text-center mb-3">
+                            Explore
+                            Our <span class="font-semibold font-jakarta font-6+5xl leading-[110%]">Amazing
+                                Features</span>
+                        </h1>
+                        <p class="max-w-3xl font-md text-center leading-[150%] text-light-black">Yoomi is more than just
+                            a
+                            regular remote monitoring solution. Our product supports patients
+                            and providers through every step of the rehabilitation process</p>
+                    </div>
+                    <div class="flex flex-wrap lg:justify-start justify-center">
+                        <div class="lg:w-6/12">
+                            <h3 class="mb-1 font-medium font-md dark-Cyan lg:justify-start flex justify-center">LIBRARY
+                            </h3>
+                            <h1 class="font-jakarta font-normal font-4xl leading-[110%] mb-5 lg:text-start text-center">
+                                Extensive Exercise<span class="font-semibold "> Library </span>
+                            </h1>
+                            <div class="flex gap-4 mb-2 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md max-w-96 font-normal leading-[150%] text-left">Utilize
+                                    Yoomi’s HEP
+                                    templates
+                                    to quickly create and assign programs to your patients </p>
+                            </div>
+                            <div class="flex gap-4 mb-2 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md font-normal  max-w-md leading-[150%] text-left">Choose
+                                    from
+                                    our
+                                    library of
+                                    exercises for all patient cases </p>
+                            </div>
+                            <div class="flex gap-4 mb-9 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md font-normal leading-[150%] max-w-[407px] text-left">Use
+                                    Yoomi’s
+                                    industry-leading
+                                    exercise generation tool to create your own exercises that track adherence and form
+                                    in
+                                    seconds</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="w-40 h-[51px] font-medium font-md bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white text-white flex items-center justify-center rounded lg:mb-[107px] md:mb-24 mb-20">View
+                                    the Library</button>
+                            </div>
+                        </div>
+                        <div class="lg:w-6/12 w-full relative">
+                            <div
+                                class=" absolute overflow-x-hidden -top-10 rounded -right-0 max-w-[500px] max-h-[240px] bg-[#82B2C2] w-full h-full">
+                            </div>
+                            <div>
+                                <button
+                                    class="z-20 absolute lg:bottom-[58px] -bottom-12 left-0 prevarrow h-[34px] w-[34px]  border-[1px] border-black hover:border-none flex justify-center items-center rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75"
+                                        viewBox="0 0 320 512">
+                                        <path fill="#000000"
+                                            d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                                    </svg>
+                                </button>
+                                <button
+                                    class="z-20 absolute lg:bottom-[58px] -bottom-12 left-11 nextarrow h-[34px] w-[34px] bg-[#076787] hover:border-[1px] hover:border-black hover:bg-white flex justify-center items-center rounded-full">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="14" width="8.75"
+                                        viewBox="0 0 320 512">
+                                        <path fill="#ffffff"
+                                            d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="sec-3-slider ">
+                                <div>
+                                    <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.png" alt="man-img">
+                                </div>
+                                <div>
+                                    <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.png" alt="man-img">
+                                </div>
+                                <div>
+                                    <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.png" alt="man-img">
+                                </div>
+                                <div>
+                                    <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.png" alt="man-img">
+                                </div>
+                                <div>
+                                    <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.png" alt="man-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- tracking section------------------------ -->
+        <section class="flex flex-col justify-center lg:pt-[150px] md:pt-32 sm:pt-28 pt-20 items-center">
+            <div class="container mx-auto px-3">
+                <div class="flex flex-wrap library-shadow rounded-[32px] z-10 lg:ps-[72px] lg:pb-14 pb-12">
+                    <div class="lg:w-6/12 w-full flex items-center justify-center lg:justify-start">
+                        <div class="relative">
+                            <img class="pointer-events-none" src="./assets/img/webp/sec-4-img.png"
+                                alt="Scapular-Retraction-img">
+
+                            <img class="pointer-events-none absolute lg:max-w-56 md:max-w-44 sm:max-w-36 max-w-28 lg:-left-12 lg:-top-10 md:-left-8 md:-top-4 top-[2px] left-[2px] primary-shadow"
+                                src="./assets/img/webp/scapular-retraction-side-img.png"
+                                alt="Scapular-Retraction-side-img">
+
+                            <img class="absolute pointer-events-none lg:max-w-32 md:max-w-24 sm:max-w-20 max-w-16 lg:-top-9 lg:-right-7 md:-top-7 md:-right-5 sm:-top-5 sm:-right-5 top-1 right-1"
+                                src="./assets/img/webp/circle-percentage-img.png" alt="circle-percentage-img">
+                        </div>
+                    </div>
+                    <div
+                        class="lg:w-6/12 w-full flex flex-col lg:ps-14 justify-center lg:items-start lg:mt-0 mt-10 items-center ">
+                        <div>
+                            <h3 class="mb-1 font-medium font-md dark-Cyan lg:justify-start flex justify-center">TRACKING
+                            </h3>
+                            <h1
+                                class="max-w-[468px] font-jakarta font-normal font-4xl leading-[110%] text-center lg:text-start mb-5">
+                                Cutting
+                                Edge Motion <span class="font-semibold">Tracking/ Feedback</span></h1>
+                            <div class="flex gap-4 mb-2 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md max-w-96 font-normal leading-[150%] text-left">Provides
+                                    a
+                                    holistic, real-time analysis of patient exercise form, capturing 300+ data points
+                                    and
+                                    critical metrics. </p>
+                            </div>
+                            <div class="flex gap-4 mb-2 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md font-normal  max-w-[362px] leading-[150%] text-left">
+                                    Delivers
+                                    immediate feedback and guidance to correct and improve exercise form</p>
+                            </div>
+                            <div class="flex gap-4 mb-2 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md font-normal leading-[150%] max-w-[407px] text-left">
+                                    Supported
+                                    by the most accurate motion-tracking model designed for rehabilitation, Yoomi Vision
+                                </p>
+                            </div>
+                            <div class="flex gap-4 lg:mb-9 mb-7 items-center">
+                                <div class="w-6 h-6">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12.122 17.6687L19.7595 10.0312L18.2428 8.51449L12.122 14.6353L9.03451 11.5478L7.51784 13.0645L12.122 17.6687ZM6.05534 22.8687C5.45951 22.8687 4.94926 22.6563 4.52459 22.2317C4.09992 21.807 3.88795 21.2971 3.88867 20.702V5.53532C3.88867 4.93949 4.10101 4.42924 4.52567 4.00457C4.95034 3.5799 5.46023 3.36793 6.05534 3.36865H21.222C21.8178 3.36865 22.3281 3.58099 22.7528 4.00565C23.1774 4.43032 23.3894 4.94021 23.3887 5.53532V20.702C23.3887 21.2978 23.1763 21.8081 22.7517 22.2327C22.327 22.6574 21.8171 22.8694 21.222 22.8687H6.05534Z"
+                                            fill="#82B2C2" />
+                                    </svg>
+                                </div>
+                                <p class="text-light-black fs-md font-normal leading-[150%] max-w-[407px] text-left">
+                                    Requires no
+                                    custom hardware, sensors, or equipment</p>
+                            </div>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="w-[180px] h-[51px] font-medium font-md bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white text-white flex items-center justify-center rounded ">Test
+                                    it Yourself</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- report section-------------------------- -->
+        <section
+            class="flex flex-col justify-center lg:pt-28 md:pt-24 sm:pt-16 pt-10 lg:pb-20 md:pb-14 pb-5 items-center relative">
+            <img class="absolute pointer-events-none right-14 -top-10 z-[-1]" src="./assets/img/svg/platform-bg-img.svg"
+                alt="square-bg-img">
+            <div class="container mx-auto px-3">
+                <div
+                    class="flex flex-wrap library-shadow justify-center lg:justify-start lg:pb-[106px] md:pb-20 sm:pb-14 pb-8 rounded-[32px] lg:pt-[89px] md:pt-16 pt-14 lg:ps-8 ps-5rounded-[32px] relative">
+                    <img class="absolute pointer-events-none left-0 bottom-0" src="./assets/img/webp/report-col-img.png"
+                        alt="report-col-img">
+                    <div class="lg:w-6/12 flex flex-col justify-center ">
+                        <div>
+                            <h3 class="mb-1 font-medium font-md dark-Cyan text-center lg:text-start">REPORT</h3>
+                            <h1
+                                class="font-jakarta font-normal font-4xl leading-[110%] lg:mb-5 mb-3 text-center lg:text-start">
+                                Reporting + <span class="font-semibold">Analytics</span> </h1>
+                            <p
+                                class="leading-[150%] lg:mb-9 mb-5 max-w-[385px] font-md font-normal text-light-black text-center lg:text-start  ">
+                                Track
+                                patient
+                                progress over
+                                time with compliance,
+                                pain, RPE, ROM and other key metrics</p>
+                            <div class="flex justify-center lg:justify-start">
+                                <button
+                                    class="w-44 h-[51px] font-medium font-md bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white text-white flex items-center justify-center rounded">View
+                                    the Matrics</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-6/12 lg:mt-0 mt-10">
+                        <div class="relative">
+                            <img class="pointer-events-none" src="./assets/img/webp/sec-4-report-img.png"
+                                alt="report-img">
+
+                            <img class="absolute pointer-events-none lg:-bottom-5 lg:right-11 primary-shadow md:bottom-2 md:right-12 sm:bottom-5 sm:right-12 sm:top-[unset] top-[74%] right-10 lg:max-w-[201px] md:max-w-44 sm:max-w-36 max-w-20"
+                                src="./assets/img/webp/sec-4-level-img.png" alt="level-img">
+
+                            <img class="absolute pointer-events-none  lg:max-w-[282px] md:max-w-60 sm:max-w-44 max-w-32 lg:-top-11 lg:-left-[52px] md:-top-2 md:left-0 sm:top-1 sm:left-3 top-0 left-2"
+                                src="./assets/img/webp/sec-4-status-img.png" alt="status-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- platform section------------------------ -->
+        <section class="flex flex-col justify-center items-center lg:py-[79px] md:py-14 py-12 bg-[#AFCBD521] relative">
+            <img class="absolute pointer-events-none right-0 top-0 z-[1]" src="./assets/img/svg/platform-bg-img.svg"
+                alt="square-bg-img">
+            <div class="container mx-auto px-3 z-20">
+                <div class="justify-center flex flex-col items-center ">
+                    <h3 class="mb-2 font-medium font-md dark-Cyan">PLATFORM</h3>
+                    <h1 class="font-jakarta font-normal font-4xl leading-[110%] mb-2">Through <span
+                            class="font-semibold">Our Platform</span> </h1>
+                    <p class="text-light-black lg:mb-[49px] md:mb-9 mb-7 text-center  lg:text-start">We’ve helped out
+                        partners and patients achieve</p>
+                    <div class="flex flex-wrap justify-center">
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                            <div
+                                class="percentage-box lg:max-w-[268px] md:max-w-[240px] max-w-52 relative lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8  lg:px-[70px] w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#85B6A6]">
+                                <img class="absolute pointer-events-none right-0 bottom-0"
+                                    src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
+                                <div class="max-w-[148px] flex-col flex items-center ">
+
+                                    <h3
+                                        class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
+                                        50%</h3>
+                                    <p class="max-w-36 text-center font-xl font-normal leading-[150%] text-white">
+                                        Reduction
+                                        in Pain</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                            <div
+                                class="percentage-box lg:max-w-[268px] md:max-w-[240px] relative max-w-52 lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8 lg:px-11 w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#82B2C2]">
+                                <img class="absolute pointer-events-none right-0 bottom-0"
+                                    src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
+                                <div class="max-w-[184px] flex-col flex items-center ">
+
+                                    <h3
+                                        class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
+                                        90%</h3>
+                                    <p class="max-w-[184px] text-center font-xl font-normal leading-[150%] text-white">
+                                        Increase In-Patient Satisfaction</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                            <div
+                                class="percentage-box lg:max-w-[268px] md:max-w-[240px] relative max-w-52 lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8 lg:px-[59px] w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#076787]">
+                                <img class="absolute pointer-events-none right-0 bottom-0"
+                                    src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
+                                <div class="max-w-[154px] flex-col flex items-center ">
+
+                                    <h3
+                                        class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
+                                        60%</h3>
+                                    <p class="max-w-40 text-center font-xl font-normal leading-[150%] text-white">Faster
+                                        Recovery</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- healthcare section---------------------- -->
+        <section class="flex flex-col lg:pt-20 md:pt-16 pt-12 lg:mt-2 mt-3 justify-center items-center">
+            <div class="max-w-[1440px] mx-auto px-3">
+                <div class="justify-center flex flex-col items-center">
+                    <h3 class="mb-2 font-medium font-md dark-Cyan">PARTNERS</h3>
+                    <h1
+                        class="font-jakarta max-w-2xl text-center lg:mb-9 md:mb-7 mb-5 font-normal font-4xl leading-[110%] ">
+                        Recognized
+                        by Leading <span class="font-semibold">Healthcare Institutions </span> </h1>
+                </div>
+
+                <div class="flex flex-wrap justify-center items-center">
+                    <div class="lg:w-2.5/12  overflow-hidden px-3 py-3 ">
+                        <div
+                            class="max-w-[207px] rounded healthcare-box px-[57px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
+                            <img src="./assets/img/svg/healthcare-institute-img-1.svg" alt="healthcare-institute-img">
+                        </div>
+                    </div>
+                    <div class="lg:w-2.5/12  px-3 py-3">
+                        <div
+                            class="max-w-[207px] rounded healthcare-box px-[64px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
+                            <img src="./assets/img/svg/healthcare-institute-img-2.svg" alt="healthcare-institute-img">
+                        </div>
+                    </div>
+                    <div class="lg:w-2.5/12  px-3 py-3">
+                        <div
+                            class="max-w-[207px] rounded healthcare-box px-[55px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
+                            <img src="./assets/img/svg/healthcare-institute-img-3.svg" alt="healthcare-institute-img">
+                        </div>
+                    </div>
+                    <div class="lg:w-2.5/12  px-3 py-3">
+                        <div
+                            class="max-w-[207px] rounded healthcare-box px-[65px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
+                            <img src="./assets/img/svg/healthcare-institute-img-4.svg" alt="healthcare-institute-img">
+                        </div>
+                    </div>
+                    <div class="lg:w-2.5/12  px-3 py-3">
+                        <div
+                            class="max-w-[207px] rounded healthcare-box px-[57px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
+                            <img src="./assets/img/svg/healthcare-institute-img-5.svg" alt="healthcare-institute-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- figure in sports section---------------- -->
+        <section class="flex flex-col pt-20 mt-2 justify-center items-center">
+            <div class="container mx-auto px-3">
+                <div class="justify-center flex flex-col items-center">
+                    <h3 class="mb-2 font-medium font-md dark-Cyan">KNOW MORE</h3>
+                    <h1 class="font-jakarta max-w-[506px] text-center mb-7 font-normal font-4xl leading-[110%] ">And
+                        Used
+                        by the
+                        Biggest <span class="font-semibold">Figures in Sports and Rehab </span>
+                    </h1>
+                    <div class=" mt-9 px-3">
+                        <!--------------------------  Slider images ----------------------------->
+                        <div class="max-w-[946px] w-full lg:min-h-[473px] slider-top mx-auto">
+                            <div>
+                                <img class=" w-full aspect-video rounded-2xl pointer-events-none"
+                                    src="./assets/img/webp/slider-img-1.png" alt="slider-img-1">
+                            </div>
+                            <div>
+                                <img class=" w-full aspect-video rounded-2xl"
+                                    src="./assets/img/webp/slider-btn-img-2.png" alt="slider-img-2">
+                            </div>
+                            <div>
+                                <img class=" w-full aspect-video rounded-2xl "
+                                    src="./assets/img/webp/slider-btn-img-3.png" alt="slider-img-3">
+                            </div>
+                            <div>
+                                <img class=" w-full aspect-video rounded-2xl "
+                                    src="./assets/img/webp/slider-btn-img-4.png" alt="slider-img-4">
+                            </div>
+                        </div>
+                        <!-------------------------- Slider tap images ------------------------------->
+                        <div class="slider-bottom max-w-[716px] mx-auto mt-9 mb-20">
+                            <div>
+                                <img class="max-w-[152px] min-h-[114px] rounded overflow-hidden"
+                                    src="./assets/img/webp/slider-btn-img-1.png" alt="slider-btn-img">
+                            </div>
+                            <div>
+                                <img class="max-w-[152px] min-h-[114px] rounded overflow-hidden"
+                                    src="./assets/img/webp/slider-btn-img-2.png" alt="slider-btn-img">
+                            </div>
+                            <div>
+                                <img class="max-w-[152px] min-h-[114px] rounded overflow-hidden"
+                                    src="./assets/img/webp/slider-btn-img-3.png" alt="slider-btn-img">
+                            </div>
+                            <div>
+                                <img class="max-w-[152px] min-h-[114px] rounded overflow-hidden"
+                                    src="./assets/img/webp/slider-btn-img-4.png" alt="slider-btn-img">
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="bg-[#076787]  lg:-mb-[107px] md:mb-20 mb-16 max-w-[1145px] lg:max-h-[379px] h-max j lg:ps-[84px] md:ps-16 md:pe-16 pe-3 ps-3 lg:pe-[103px] pt-9 lg:pb-[78px] pb-9 w-full rounded-[32px] relative">
+                        <img class="absolute pointer-events-none bottom-0 right-0"
+                            src="./assets/img/webp/newsletter-box-img.png" alt="square-bg-img">
+                        <div class="flex flex-wrap lg:justify-between justify-center">
+                            <div class="lg:w-6/12 flex  flex-col">
+                                <img class="mb-5 lg:pt-[43px] max-w-[228px] px-3 lg:px-0"
+                                    src="./assets/img/svg/yoomi-logo.svg" alt="yoomi-logo">
+                                <h3
+                                    class="font-jakarta text-white font-normal font-3xl text-center lg:text-start leading-[110%] lg:mb-12 md:mb-9 mb-7 ">
+                                    Sign Up
+                                    to
+                                    Join <span class="font-semibold">Our Newsletter</span> </h3>
+                                <div
+                                    class="email-bg max-w-[428px] flex items-center rounded ps-3 lg:mb-32 md:mb-28 sm:mb-24 mb-16 bg-white pe-1 drop-shadow-2xl">
+                                    <input type="email" text="" name="" placeholder="Enter Your Email"
+                                        class="font-medium border-none  outline-none pe-3 text-[#110163] placeholder:text-[#584D92] max-w-[428px] w-full h-[56px]  ">
+                                    <button
+                                        class="font-md max-w-[122px] w-full border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white   text-white h-[45px] bg-[#076787]  font-semibold rounded">Get
+                                        Started</button>
+                                </div>
+                            </div>
+                            <div class="lg:w-6/12 flex justify-end">
+                                <img class="max-w-[300px] max-h-[321px]" src="./assets/img/svg/man-img.svg"
+                                    alt="man-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ------------- footer section-------------------------- -->
+        <footer
+            class="flex bg-black lg:pt-[213px] md:pt-32 sm:pt-20 pt-12 lg:pb-[103px] pb-12 flex-col items-center justify-center">
+            <div class="container mx-auto px-3">
+                <div class="flex flex-wrap">
+
+                    <div class="lg:w-7/12 w-full">
+                        <img class="mb-7" src="./assets/img/svg/footer-logo.svg" alt="footer-logo">
+                        <p class="max-w-[277px] text-white font-light font-sm leading-[150%] mb-7">I'm a paragraph.
+                            Click here to add your own text and edit
+                            me.
+                            It’s easy. Just click “Edit Text”
+                        </p>
+                        <div class="mail gap-4 flex mb-4">
+                            <svg width="26" height="21" viewBox="0 0 26 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M22.8887 0.506836H2.88867C1.51367 0.506836 0.401172 1.63184 0.401172 3.00684L0.388672 18.0068C0.388672 19.3818 1.51367 20.5068 2.88867 20.5068H22.8887C24.2637 20.5068 25.3887 19.3818 25.3887 18.0068V3.00684C25.3887 1.63184 24.2637 0.506836 22.8887 0.506836ZM22.8887 5.50684L12.8887 11.7568L2.88867 5.50684V3.00684L12.8887 9.25684L22.8887 3.00684V5.50684Z"
+                                    fill="white" />
+                            </svg>
+                            <a class="text-white font-light fs-md " href="contact">contact@yoomi.com</a>
+                        </div>
+                        <div class="mail gap-4 flex">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.0687 17.0135C21.4287 17.0135 19.842 16.7468 18.362 16.2668C17.8953 16.1068 17.3753 16.2268 17.0153 16.5868L14.922 19.2135C11.1487 17.4135 7.61534 14.0135 5.73534 10.1068L8.33534 7.8935C8.69534 7.52017 8.802 7.00017 8.65534 6.5335C8.162 5.0535 7.90867 3.46684 7.90867 1.82684C7.90867 1.10684 7.30867 0.506836 6.58867 0.506836H1.97534C1.25534 0.506836 0.388672 0.826836 0.388672 1.82684C0.388672 14.2135 10.6953 24.5068 23.0687 24.5068C24.0153 24.5068 24.3887 23.6668 24.3887 22.9335V18.3335C24.3887 17.6135 23.7887 17.0135 23.0687 17.0135Z"
+                                    fill="white" />
+                            </svg>
+
+                            <a class="text-white font-light fs-md" href="contact">+123 456 789</a>
+                        </div>
+                    </div>
+                    <div class="lg:w-5/12 w-full flex gap-3 mt-5 lg:mt-0 text-white lg:justify-end">
+                        <div class="w-5/12 px-3 py-3 flex justify-center">
+                            <ul class="font-normal fs-sm gap-[18px] flex flex-col">
+                                <h1 class="font-semibold font-sm">About Us</h1>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Meet the
+                                        Team
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Our
+                                        Mission</li>
+                                </a>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Our
+                                        Vision</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="w-3/12 px-3 py-3 flex justify-center">
+                            <ul class="font-normal font-sm gap-[19px] flex flex-col">
+                                <h1 class="font-semibold ">Contact Us</h1>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Twitter
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Instagram
+                                    </li>
+                                </a>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Linkedin
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="w-2.5/12 px-3 py-3 flex justify-end">
+                            <ul class="font-normal fs-sm gap-[18px] flex flex-col">
+                                <h1 class="font-semibold font-sm ">News</h1>
+                                <a href="#">
+                                    <li class="hover:duration-200 font-sm hover:ease-linear hover:scale-[1.1]">Recent
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

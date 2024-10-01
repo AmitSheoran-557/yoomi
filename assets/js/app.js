@@ -15,7 +15,7 @@ menuicon.addEventListener("click", function () {
     body.classList.toggle("overflow-lg-hidden")
 })
 
-// ===============================================
+// ====================  ===========================
 
 $('.sec-3-slider').slick({
     infinite: true,
@@ -67,24 +67,55 @@ $('.sec-3-slider').slick({
 });
 
 
-// ==================== slider ======================
+// ==================== figure in sports slider ======================
 $(document).ready(function () {
-    $('.slider-top').slick({
+    $(".big-img-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-bottom',
+        asNavFor: ".second-row-slider",
         infinite: true,
+        
     });
 
-    $('.slider-bottom').slick({
+    $(".second-row-slider").slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        asNavFor: '.slider-top',
+        asNavFor: ".big-img-slider",
+        arrows: false,
         centerMode: true,
         focusOnSelect: true,
         infinite: true,
         variableWidth: true,
+
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                infinite: true,
+                centerMode: true,
+                dots: false
+              },
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                centerMode: true,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                centerMode: true,
+                slidesToScroll: 1
+              },
+            },
+          ]
     });
 });

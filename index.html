@@ -20,6 +20,7 @@
 
     <link rel="stylesheet" href="./assets/css/root.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="./fav-icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
         integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
@@ -67,6 +68,10 @@
                         "lily-white": "#EDF6F9",
 
                     },
+                    boxShadow: {
+                        "default": '0px 4px 15px 0px #07678726',
+
+                    }
                 },
             },
         };
@@ -76,7 +81,8 @@
 <body>
     <main>
         <!-- ------------- hero section ---------------------------- -->
-        <section class="flex max-w-[1920px] bg-pale-grey mx-auto flex-col justify-center items-center min-h-scree relative">
+        <section
+            class="flex max-w-[1920px] bg-pale-grey mx-auto flex-col justify-center items-center min-h-scree relative">
             <img class="absolute pointer-events-none left-0 xl:top-[164px] lg:top-32 md:top-24 top-20 lg:max-w-64 md:max-w-52 sm:max-w-44 max-w-20"
                 src="./assets/img/webp/sec-1-bg-img-2.webp" alt="square-bg-img">
             <img class="absolute pointer-events-none right-0 xl:top-56 md:top-64 sm:top-72 top-96 lg:max-w-64 md:max-w-52 sm:max-w-44 max-w-24"
@@ -85,22 +91,21 @@
                 src="./assets/img/webp/sec-1-flower-img.webp" alt="flower-img">
             <img class="absolute pointer-events-none lg:right-64 md:right-52 sm:right-44 right-20 lg:max-w-16 md:max-w-14 max-w-12 lg:-bottom-12  md:-bottom-12 -bottom-10"
                 src="./assets/img/webp/sec-1-flower-img-2.webp" alt="flower-img">
-
             <img class="absolute pointer-events-none -bottom-6 z-[-2] w-full"
                 src="./assets/img/webp/sec-1-line-img.webp" alt="blue-line-img">
 
             <div class="container z-1 mx-auto px-3 xl:pt-7 lg:pt-6 pt-5 w-full">
                 <nav class="flex justify-between items-center">
-                    <div><a href="/"><img src="./assets/img/svg/page-logo.svg" alt="logo-img"></a></div>
+                    <div data-aos="zoom-in-right"><a href="/"><img src="./assets/img/svg/page-logo.svg" alt="logo-img"></a></div>
                     <div
                         class="flex flex-col menulist gap-11 items-center menulist justify-center duration-300 ease-linear text-white w-full -right-full min-h-screen fixed top-0 bg-blue-500 z-50 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:bg-transparent">
-                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"
+                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"  data-aos="zoom-in-left"
                             href="#About">About Us</a>
-                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"
+                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"  data-aos="zoom-in-left"
                             href="#News">News</a>
-                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"
+                        <a class="text-black lg:text-lg md:text-base text-sm font-medium hover:scale-[1.2] duration-200 ease-linear"  data-aos="zoom-in-left"
                             href="#Contact">Contact Us</a>
-                        <button
+                        <button  data-aos="zoom-in-left"
                             class="lg:text-base md:text-sm text-xs w-[122px] h-[45px] bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white font-semibold rounded">Get
                             Started</button>
                     </div>
@@ -114,9 +119,9 @@
                     </div>
                 </nav>
             </div>
-            <div class="container z-10 mx-auto px-3 lg:mt-32 md:mt-24 mt-16 flex flex-col items-center w-full">
+            <div class="container z-10 mx-auto px-3 lg:mt-32 md:mt-24 mt-16 flex flex-col items-center w-full" data-aos="zoom-in-up">
                 <h1
-                    class="max-w-[920px] font-jakarta font-normal leading-[110%]  lg:text-6xl md:text-5xl text-4xl text-center mb-5 ">
+                    class="max-w-[920px] font-jakarta font-normal leading-[110%]  lg:text-6xl md:text-5xl text-4xl text-center mb-5">
                     <span class="font-extrabold font-jakarta lg:text-6xl md:text-5xl text-4xl leading-[110%]">Next
                         Generation</span> Patient
                     Engagement and RTM Solution✨
@@ -127,9 +132,9 @@
                     Leading AI
                     Motion-Tracking Technology</p>
                 <div
-                    class="email-bg flex items-center rounded ps-3 mb-[124px] max-w-[428px] w-full bg-white pe-1 drop-shadow-2xl">
+                    class="email-bg flex items-center shadow-default rounded ps-3 mb-[124px] max-w-[428px] w-full bg-white pe-1">
                     <input type="email" required placeholder="Enter Your Email"
-                        class="font-medium border-none  outline-none max-w-[428px] w-full h-[56px] placeholder:text-[#4D4D4D] text-[#076787] pr -2  ">
+                        class="font-medium border-none  outline-none max-w-[428px] w-full h-[56px] placeholder:text-[#4D4D4D] lg:placeholder:text-base placeholder:text-sm text-[#076787] pr-2">
                     <button
                         class="lg:text-base md:text-sm text-xs max-w-[122px] w-full text-white h-[45px] bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white  font-semibold rounded">Get
                         Started</button>
@@ -139,9 +144,9 @@
 
         <!-- ------------- workout section ------------------------- -->
         <section class="flex flex-col justify-center lg:pt-14 md:pt-16 pt-20 max-h-max items-center relative">
-            <img class="absolute pointer-events-none top-0 h-52 z-[-2] w-full" src="./assets/img/webp/blue-layer-img.webp"
-                alt="blue-layer-img">
-            <div class="contianer mx-auto">
+            <img class="absolute pointer-events-none top-0 h-52 z-[-2] w-full"
+                src="./assets/img/webp/blue-layer-img.webp" alt="blue-layer-img">
+            <div data-aos="fade-up" data-aos-anchor-placement="top-center" class="contianer mx-auto">
                 <div class="relative">
                     <img src="./assets/img/webp/sec-2-img.webp" alt="id-img">
                     <img class="absolute z-[-1] left-[25%] w-[50%] lg:top-4 md:top-3 sm:top-2 top-1"
@@ -181,7 +186,7 @@
                             </h3>
                             <h1
                                 class="font-jakarta font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] mb-5 lg:text-start text-center">
-                                Extensive Exercise<span class="font-semibold "> Library </span>
+                                Extensive Exercise<span class="font-semibold"> Library </span>
                             </h1>
                             <div class="flex gap-4 mb-2 items-center">
                                 <div class="w-6 h-6">
@@ -256,7 +261,7 @@
                                     </svg>
                                 </button>
                             </div>
-                            <div class="sec-3-slider ">
+                            <div data-aos="zoom-in" class="sec-3-slider">
                                 <div>
                                     <img class="w-100%" src="./assets/img/webp/sec-3-slider-img.webp" alt="man-img">
                                 </div>
@@ -284,7 +289,7 @@
             <div class="container bg-white rounded-3xl mx-auto px-3 z-[60] relative">
                 <div class="flex flex-wrap library-shadow rounded-[32px] z-10 lg:ps-[72px] lg:pb-14 md:pb-12 pb-10">
                     <div class="lg:w-6/12 w-full flex items-center justify-center lg:justify-start">
-                        <div class="relative">
+                        <div  data-aos="zoom-in-right" class="relative">
                             <img class="pointer-events-none" src="./assets/img/webp/sec-4-img.webp"
                                 alt="Scapular-Retraction-img">
 
@@ -297,14 +302,14 @@
                         </div>
                     </div>
                     <div
-                        class="lg:w-6/12 w-full flex flex-col lg:ps-14 justify-center lg:items-start lg:mt-0 mt-10 items-center ">
+                        class="lg:w-6/12 w-full flex flex-col lg:ps-14 justify-center lg:items-start lg:mt-0 mt-10 items-center">
                         <div>
                             <h3
                                 class="mb-2 font-medium lg:text-base md:text-sm text-xs dark-Cyan lg:justify-start flex justify-center">
                                 TRACKING
                             </h3>
                             <h1
-                                class="max-w-[468px] font-jakarta font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] text-center lg:text-start lg:mb-5 mb-3 ">
+                                class="max-w-[468px] font-jakarta font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] text-center lg:text-start lg:mb-5 mb-3">
                                 Cutting
                                 Edge Motion <span class="font-semibold">Tracking/ Feedback</span></h1>
                             <div class="flex gap-4 mb-2 items-center">
@@ -364,7 +369,7 @@
                             </div>
                             <div class="flex justify-center lg:justify-start">
                                 <button
-                                    class="lg:w-[180px] lg:h-[51px] w-32 h-[45px] font-medium lg:text-base md:text-sm text-xs bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white text-white flex items-center justify-center rounded ">Test
+                                    class="lg:w-[180px] lg:h-[51px] w-32 h-[45px] font-medium lg:text-base md:text-sm text-xs bg-[#076787] border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white text-white flex items-center justify-center rounded">Test
                                     it Yourself</button>
                             </div>
                         </div>
@@ -376,14 +381,14 @@
         <!-- ------------- report section -------------------------- -->
         <section
             class="flex flex-col justify-center lg:pt-28 md:pt-24 sm:pt-16 z-50 pt-0 lg:pb-20 md:pb-14 pb-5 items-center relative">
-            <img class="absolute lg:max-w-[303px] md:max-w-56 sm:max-w-44 max-w-32 pointer-events-none lg:right-14 md:right-10 right-0 lg:-top-10 -top-8 " src="./assets/img/webp/tracking-sec-bg-squre.webp"
-                alt="square-bg-img">
+            <img class="absolute lg:max-w-[303px] md:max-w-56 sm:max-w-44 max-w-32 pointer-events-none lg:right-14 md:right-10 right-0 lg:-top-10 -top-8 "
+                src="./assets/img/webp/tracking-sec-bg-squre.webp" alt="square-bg-img">
             <div class="container mx-auto bg-white px-3 relative z-40">
                 <div
                     class="flex flex-wrap library-shadow justify-center lg:justify-start lg:pb-[106px] md:pb-20 sm:pb-14 pb-8 rounded-[32px] lg:pt-[89px] md:pt-16 pt-14 lg:ps-8 ps-5rounded-[32px] relative">
                     <img class="absolute pointer-events-none left-0 bottom-0"
                         src="./assets/img/webp/report-col-img.webp" alt="report-col-img">
-                    <div class="lg:w-6/12 flex flex-col justify-center ">
+                    <div class="lg:w-6/12 flex flex-col justify-center">
                         <div>
                             <h3
                                 class="mb-1 font-medium lg:text-base md:text-sm text-xs dark-Cyan text-center lg:text-start">
@@ -392,7 +397,7 @@
                                 class="font-jakarta font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] lg:mb-5 mb-3 text-center lg:text-start">
                                 Reporting + <span class="font-semibold">Analytics</span> </h1>
                             <p
-                                class="leading-[150%] lg:mb-9 mb-5 max-w-[385px] lg:text-base md:text-sm text-xs font-normal text-light-black text-center lg:text-start  ">
+                                class="leading-[150%] lg:mb-9 mb-5 max-w-[385px] lg:text-base md:text-sm text-xs font-normal text-light-black text-center lg:text-start ">
                                 Track
                                 patient
                                 progress over
@@ -405,7 +410,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="lg:w-6/12 lg:mt-0 mt-10">
+                    <div data-aos="zoom-in-left" class="lg:w-6/12 lg:mt-0 mt-10">
                         <div class="relative">
                             <img class="pointer-events-none" src="./assets/img/webp/sec-4-report-img.webp"
                                 alt="report-img">
@@ -426,7 +431,7 @@
             <img class="absolute pointer-events-none right-0 top-0 z-[1]" src="./assets/img/svg/platform-bg-img.svg"
                 alt="square-bg-img">
             <div class="container mx-auto px-3 z-20">
-                <div class="justify-center flex flex-col items-center ">
+                <div class="justify-center flex flex-col items-center">
                     <h3 class="mb-2 font-medium lg:text-base md:text-sm text-xs dark-Cyan">PLATFORM</h3>
                     <h1
                         class="font-jakarta font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] mb-2">
@@ -434,12 +439,12 @@
                     <p class="text-light-black lg:mb-[49px] md:mb-9 mb-7 text-center  lg:text-start">We’ve helped out
                         partners and patients achieve</p>
                     <div class="flex flex-wrap justify-center">
-                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12" data-aos="flip-down">
                             <div
                                 class="percentage-box lg:max-w-[268px] md:max-w-[240px] max-w-52 relative lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8  lg:px-[70px] w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#85B6A6]">
                                 <img class="absolute pointer-events-none right-0 bottom-0"
                                     src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
-                                <div class="max-w-[148px] flex-col flex items-center ">
+                                <div class="max-w-[148px] flex-col flex items-center">
 
                                     <h3
                                         class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
@@ -451,12 +456,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12" data-aos="flip-down">
                             <div
                                 class="percentage-box lg:max-w-[268px] md:max-w-[240px] relative max-w-52 lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8 lg:px-11 w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#82B2C2]">
                                 <img class="absolute pointer-events-none right-0 bottom-0"
                                     src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
-                                <div class="max-w-[184px] flex-col flex items-center ">
+                                <div class="max-w-[184px] flex-col flex items-center">
 
                                     <h3
                                         class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
@@ -467,12 +472,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12 ">
+                        <div class="lg:w-4/12 px-3.5 py-3.5 md:w-6/12" data-aos="flip-down">
                             <div
                                 class="percentage-box lg:max-w-[268px] md:max-w-[240px] relative max-w-52 lg:min-h-[207px] md:min-h-48 min-h-40 h-full lg:pt-[42px] md:pt-10 pt-8 lg:px-[59px] w-full md:px-20 px-10 rounded flex items-center flex-col  bg-[#076787]">
                                 <img class="absolute pointer-events-none right-0 bottom-0"
                                     src="./assets/img/svg/percentage-box-img.svg" alt="square-img">
-                                <div class="max-w-[154px] flex-col flex items-center ">
+                                <div class="max-w-[154px] flex-col flex items-center">
 
                                     <h3
                                         class="text-white leading-[110%] lg:text-6xl md:text-5xl text-4xl font-semibold">
@@ -495,40 +500,45 @@
                 <div class="justify-center flex flex-col items-center">
                     <h3 class="mb-2 font-medium lg:text-base md:text-sm text-xs dark-Cyan">PARTNERS</h3>
                     <h1
-                        class="font-jakarta max-w-2xl text-center lg:mb-9 md:mb-7 mb-5 font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] ">
+                        class="font-jakarta max-w-2xl text-center lg:mb-9 md:mb-7 mb-5 font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%]">
                         Recognized
                         by Leading <span class="font-semibold">Healthcare Institutions </span> </h1>
                 </div>
 
                 <div class="flex flex-wrap justify-center items-center">
-                    <div class="lg:w-2.5/12 group overflow-hidden px-3 py-3 ">
+                    <div class="lg:w-2.5/12 group overflow-hidden px-3 py-3">
                         <div
                             class="max-w-[207px] rounded healthcare-box-1 px-[57px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
-                            <img class="group-hover:scale-[1.2] duration-200 ease-linear" src="./assets/img/svg/healthcare-institute-img-1.svg" alt="healthcare-institute-img">
+                            <img class="group-hover:scale-[1.2] duration-200 ease-linear"
+                                src="./assets/img/svg/healthcare-institute-img-1.svg" alt="healthcare-institute-img">
                         </div>
                     </div>
                     <div class="lg:w-2.5/12 group px-3 py-3">
                         <div
                             class="max-w-[207px] rounded healthcare-box px-[64px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
-                            <img class="group-hover:scale-[1.2] duration-200 ease-linear" src="./assets/img/svg/healthcare-institute-img-2.svg" alt="healthcare-institute-img">
+                            <img class="group-hover:scale-[1.2] duration-200 ease-linear"
+                                src="./assets/img/svg/healthcare-institute-img-2.svg" alt="healthcare-institute-img">
                         </div>
                     </div>
                     <div class="lg:w-2.5/12 group px-3 py-3">
                         <div
                             class="max-w-[207px] rounded healthcare-box px-[55px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
-                            <img class="group-hover:scale-[1.2] duration-200 ease-linear" src="./assets/img/svg/healthcare-institute-img-3.svg" alt="healthcare-institute-img">
+                            <img class="group-hover:scale-[1.2] duration-200 ease-linear"
+                                src="./assets/img/svg/healthcare-institute-img-3.svg" alt="healthcare-institute-img">
                         </div>
                     </div>
                     <div class="lg:w-2.5/12 group px-3 py-3">
                         <div
                             class="max-w-[207px] rounded healthcare-box px-[65px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
-                            <img class="group-hover:scale-[1.2] duration-200 ease-linear" src="./assets/img/svg/healthcare-institute-img-4.svg" alt="healthcare-institute-img">
+                            <img class="group-hover:scale-[1.2] duration-200 ease-linear"
+                                src="./assets/img/svg/healthcare-institute-img-4.svg" alt="healthcare-institute-img">
                         </div>
                     </div>
                     <div class="lg:w-2.5/12 group px-3 py-3">
                         <div
                             class="max-w-[207px] rounded healthcare-box px-[57px] border-[1px] border-[#E6E6E6] bg-white w-full h-[137px] justify-center items-center flex">
-                            <img class="group-hover:scale-[1.2] duration-200 ease-linear" src="./assets/img/svg/healthcare-institute-img-5.svg" alt="healthcare-institute-img">
+                            <img class="group-hover:scale-[1.2] duration-200 ease-linear"
+                                src="./assets/img/svg/healthcare-institute-img-5.svg" alt="healthcare-institute-img">
                         </div>
                     </div>
                 </div>
@@ -541,7 +551,7 @@
                 <div class="justify-center flex flex-col items-center">
                     <h3 class="mb-2 font-medium lg:text-base md:text-sm text-xs dark-Cyan">KNOW MORE</h3>
                     <h1
-                        class="font-jakarta max-w-[506px] text-center mb-6 font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%] ">
+                        class="font-jakarta max-w-[506px] text-center mb-6 font-normal lg:text-4xl md:text-3xl sm:text-2xl text-xl leading-[110%]">
                         And
                         Used
                         by the
@@ -550,26 +560,28 @@
 
                     <div class=" mt-9 lg:px-3">
                         <!-- Slider main img -->
-                        <div class="lg:max-w-[946px] md:max-w-md sm:max-w-sm max-w-xs w-full lg:min-h-[473px] big-img-slider mx-auto">
+                        <div
+                            class="lg:max-w-[946px] md:max-w-md sm:max-w-sm max-w-xs w-full lg:min-h-[473px] big-img-slider mx-auto">
                             <div>
-                                <img class=" w-full aspect-video rounded-2xl " src="./assets/img/webp/slider-img-1.webp"
-                                    alt="slider-img-1">
+                                <img class=" w-full aspect-video rounded-2xl "
+                                    src="./assets/img/webp/big-slider-img-1.png" alt="slider-img-3">
+                            </div>
+                            <div>
+                                <img class=" w-full aspect-video rounded-2xl "
+                                    src="./assets/img/webp/big-slider-img-2.webp" alt="slider-img-1">
                             </div>
                             <div>
                                 <img class=" w-full aspect-video rounded-2xl"
-                                    src="./assets/img/webp/slider-btn-img-4.webp" alt="slider-img-2">
+                                    src="./assets/img/webp/big-slider-img-3.webp" alt="slider-img-2">
                             </div>
                             <div>
                                 <img class=" w-full aspect-video rounded-2xl "
-                                    src="./assets/img/webp/slider-btn-img-3.webp" alt="slider-img-3">
-                            </div>
-                            <div>
-                                <img class=" w-full aspect-video rounded-2xl "
-                                    src="./assets/img/webp/slider-btn-img-4.webp" alt="slider-img-3">
+                                    src="./assets/img/webp/big-slider-img-4.webp" alt="slider-img-3">
                             </div>
                         </div>
                         <!-------------------------- Slider tap images ------------------------------->
-                        <div class="second-row-slider lg:max-w-[810px] md:max-w-md sm:max-w-sm max-w-[300px] w-full lg:mb-20 mb-16 mx-auto mt-9 ">
+                        <div
+                            class="second-row-slider lg:max-w-[810px] md:max-w-md sm:max-w-sm max-w-[300px] w-full lg:mb-20 mb-16 mx-auto mt-9">
                             <div>
                                 <img class="max-w-[152px] min-h-[114px] rounded"
                                     src="./assets/img/webp/slider-btn-img-1.webp" alt="slider">
@@ -598,21 +610,22 @@
                             <img class="mb-5 lg:pt-[43px] max-w-[228px] px-3 lg:px-0"
                                 src="./assets/img/svg/yoomi-logo.svg" alt="yoomi-logo">
                             <h3
-                                class="font-jakarta text-white font-normal lg:text-3xl md:text-2xl sm:text-xl text-lg text-center lg:text-start leading-[110%] lg:mb-12 md:mb-9 mb-7 ">
+                                class="font-jakarta text-white font-normal lg:text-3xl md:text-2xl sm:text-xl text-lg text-center lg:text-start leading-[110%] lg:mb-12 md:mb-9 mb-7">
                                 Sign Up
                                 to
                                 Join <span class="font-semibold">Our Newsletter</span> </h3>
                             <div
                                 class="email-bg max-w-[428px] flex items-center rounded ps-3 lg:mb-32 md:mb-28 sm:mb-24 mb-16 bg-white pe-1 drop-shadow-2xl">
                                 <input type="email" required placeholder="Enter Your Email"
-                                    class="font-medium border-none  outline-none pe-3 text-[#110163] placeholder:text-[#584D92] max-w-[428px] w-full h-[56px]  ">
+                                    class="font-medium border-none  outline-none pe-3 text-[#110163] placeholder:text-[#584D92] lg:placeholder:text-base placeholder:text-sm max-w-[428px] w-full h-[56px] ">
                                 <button
                                     class="lg:text-base md:text-sm text-xs max-w-[122px] w-full border-[2px] border-transparent hover:border-[2px] duration-200 ease-linear hover:border-[#076787] hover:text-[#076787] hover:bg-white   text-white h-[45px] bg-[#076787]  font-semibold rounded">Get
                                     Started</button>
                             </div>
                         </div>
                         <div class="lg:w-6/12 flex justify-end">
-                            <img class="max-w-[300px] max-h-[321px]" src="./assets/img/svg/man-img.svg" alt="man-img">
+                            <img class="max-w-[300px] w-full max-h-[321px]" src="./assets/img/svg/man-img.svg"
+                                alt="man-img">
                         </div>
                     </div>
                 </div>
@@ -682,7 +695,7 @@
                         </div>
                         <div class="w-3/12 px-3 py-3 flex justify-center">
                             <ul class="font-normal lg:text-sm text-xs gap-[19px] flex flex-col">
-                                <p class="font-semibold ">Contact Us</p>
+                                <p class="font-semibold">Contact Us</p>
                                 <a href="#">
                                     <li
                                         class="hover:duration-200 lg:text-sm text-xs hover:ease-linear hover:scale-[1.1]">
@@ -705,7 +718,7 @@
                         </div>
                         <div class="w-2.5/12 px-3 py-3 flex justify-end">
                             <ul class="font-normal gap-[18px] flex flex-col">
-                                <p class="font-semibold lg:text-sm text-xs ">News</p>
+                                <p class="font-semibold lg:text-sm text-xs">News</p>
                                 <a href="#">
                                     <li
                                         class="hover:duration-200 lg:text-sm text-xs hover:ease-linear hover:scale-[1.1]">
@@ -719,7 +732,7 @@
                 </div>
             </div>
             <div class="w-full h-[1px] bg-gunmetal mt-10">
-                <div class="container mx-auto py-[22px] px-3">
+                <div class="container mx-auto lg:py-[22px] py-4 px-3">
                     <div class="lg:text-sm text-xs flex gap-6 text-friar-grey lg:justify-end justify-center">
                         <a href="/">Terms of Service</a>
                         <a href="/">Privacy Policy</a>
@@ -737,6 +750,10 @@
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/app.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  
+    <script>
+        AOS.init();
+      </script>       
 </body>
 
 </html>
